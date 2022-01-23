@@ -15,7 +15,8 @@ class FirstNamedPage extends StatelessWidget {
         child:Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children:[
-            ElevatedButton(onPressed: (){Get.to(SecondPage());}, child: Text("다음페이지"))
+            ElevatedButton(onPressed: (){Get.toNamed("/second");}, child: Text("다음페이지")),
+            ElevatedButton(onPressed: (){Get.offNamed("/second");}, child: Text("현재페이지 없이 다음페이지"))
           ]
         )
       )

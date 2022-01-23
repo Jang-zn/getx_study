@@ -16,7 +16,7 @@ class SecondNamedPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children:[
             ElevatedButton(onPressed: (){Get.back();}, child: Text("뒤로")),
-            ElevatedButton(onPressed: (){Get.offAll(HomePage());}, child: Text("홈으로"))
+            ElevatedButton(onPressed: (){Get.offAllNamed("/");}, child: Text("홈으로"))
           ]
         )
       )

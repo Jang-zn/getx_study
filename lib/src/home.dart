@@ -20,8 +20,14 @@ class HomePage extends StatelessWidget {
                 onPressed: (){
                   Get.to(FirstPage());
                 },
-                child: Text("일반 라우트"))
+                child: Text("일반 라우트")),
+            ElevatedButton(
+                onPressed: (){
+                  Get.toNamed("/first");
+                },
+                child: Text("Named 라우트"))
           ],
+
         )
       )
     );
