@@ -25,9 +25,20 @@ class HomePage extends StatelessWidget {
                 onPressed: (){
                   Get.toNamed("/first");
                 },
-                child: Text("Named 라우트"))
+                child: Text("Named 라우트")),
+            //Arguments는 싹다 보낼 수 있음. Object까지
+            ElevatedButton(
+                onPressed: (){
+                  Get.toNamed("/next", arguments: "Argument1234");
+                },
+                child: Text("Arguments")),
+            //동적 url도 처리해줌 (쿼리스트링같은거)
+            ElevatedButton(
+                onPressed: (){
+                  Get.toNamed("/user/zn2309?name=jang&age=30");
+                },
+                child: Text("동적 url"))
           ],
-
         )
       )
     );
